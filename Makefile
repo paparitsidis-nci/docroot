@@ -30,6 +30,7 @@ serve:
 prepare:
 	mkdir -p dist
 	npm install
+	npm install --global mermaid-filter
 
 clean:
 	echo $(GENERATED)
