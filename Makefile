@@ -22,7 +22,7 @@ serve:
 prepare:
 	mkdir -p dist
 	npm install
-	npm install --global 'mermaid-filter@~1.4'
+#	npm install --global 'mermaid-filter@~1.4'
 
 clean:
 	echo $(GENERATED)
