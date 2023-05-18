@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "jsdom": "^21.1.0"
+    "jsdom": "^21.1.0",
+    "@mermaid-js/mermaid-cli":"~10"
   }
 }

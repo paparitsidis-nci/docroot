@@ -22,7 +22,6 @@ serve:
 prepare:
 	mkdir -p dist
 	npm install
-	npm install --global '@mermaid-js/mermaid-cli@~10'
 	npm install --global 'mermaid-filter@~1.4'
 
 clean:
