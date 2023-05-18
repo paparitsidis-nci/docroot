@@ -21,7 +21,7 @@ serve:
 
 prepare:
 	mkdir -p dist
-	npm install
+	npm install --verbose
 #	npm install --global 'mermaid-filter@~1.4'
 
 clean:
