@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "jsdom": "^21.1.0"
+    "jsdom": "^21.1.0",
+    "mermaid-filter": "^1.4.6"
   }
 }
