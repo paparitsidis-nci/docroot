@@ -11,7 +11,7 @@ all: $(GENERATED)
 
 # Gerenate html, doc from the html
 intro.html: intro.md
-	pandoc -s -o ./dist/$@ $< --toc --metadata title="The European Digital Identity Wallet Reference Implementation" --metadata lang="en" --self-contained --css=styles/style.css -F mermaid-filter
+	pandoc -s -o ./dist/$@ $< --toc --metadata title="The European Digital Identity Wallet Reference Implementation" --metadata lang="en" --self-contained --css=styles/style.css -F ~/node_modules/mermaid-filter/index.js
 	node fix.js
 	cd ./dist && cp output.html $@ && rm output.html
 
