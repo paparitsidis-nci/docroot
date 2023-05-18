@@ -5,8 +5,7 @@
 #
 # Parameters and Variables
 # https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables
-GENERATED=	intro.html \
-			intro.docx
+GENERATED=	intro.html
 
 
 
@@ -18,10 +17,6 @@ intro.html: intro.md
 	node fix.js
 	cd ./dist && cp output.html $@ && rm output.html
 	# pandoc -o ./dist/$@.docx ./dist/$@ --reference-doc=styles/reference.docx
-
-# Generate docx
-# intro.docx: intro.md
-#	pandoc -o ./dist/$@ $<
 
 # Run a local http server
 serve:
