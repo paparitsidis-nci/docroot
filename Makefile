@@ -14,7 +14,7 @@ all: $(GENERATED)
 
 # Gerenate html, doc from the html
 intro.html: intro.md
-	pandoc -s -o ./dist/$@ $< --toc --metadata title="The European Digital Identity Wallet Architecture and Reference Framework" --metadata lang="en" --self-contained --css=styles/style.css
+	pandoc -s -o ./dist/$@ $< --toc --metadata title="The European Digital Identity Wallet Reference Implementation" --metadata lang="en" --self-contained --css=styles/style.css
 	node fix.js
 	cd ./dist && cp output.html $@ && rm output.html
 	pandoc -o ./dist/$@.docx ./dist/$@ --reference-doc=styles/reference.docx
