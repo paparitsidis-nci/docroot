@@ -5,3 +5,5 @@ Web application (Backend Restful service) that would allow somebody to trigger t
 ## section of second page
 
 test
+
+[link to section of the intro page](./intro.md#entity-diagram)

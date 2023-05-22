@@ -4,15 +4,8 @@ const { JSDOM } = jsdom;
 
 let idDict = {};
 
-// print process.argv
-process.argv.forEach(function (val, index, array) {
-  console.log(index + ': ' + val);
-});
-
 const inputFilePath = process.argv[2];
 const outputFilePath = process.argv[3];
-// const inputFilePath = "./dist/intro.html";
-// const outputFilePath = "./dist/output.html";
 
 fs.readFile(inputFilePath, "utf-8", (err, html) => {
   if (err) {
