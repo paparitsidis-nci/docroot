@@ -2,6 +2,8 @@
 
 Web application (Backend Restful service) that would allow somebody to trigger the presentation use case (cross device, remote presentation scenario).
 
+[link to section of the second page](./second.md#section-of-second-page)
+
 ## Entity Diagram
 
 In the EUDIW ecosystem there are 3 main entities:
@@ -10,6 +12,7 @@ In the EUDIW ecosystem there are 3 main entities:
 - Verifier
 
 ```mermaid
+%%{init: { 'theme':'dark', 'background': 'transparent' } }%%
 graph TB;
   Wallet --> Issuer;
   Issuer --> Wallet;
@@ -36,6 +39,7 @@ Useful references are:
 - [Presentation exchange](https://identity.foundation/presentation-exchange/spec/v2.0.0/)
 
 ```mermaid
+%%{init: { 'theme':'dark', 'background': 'transparent', 'sequence': {'useMaxWidth':false} } }%%
 sequenceDiagram
 box Wallet entity
     participant WU as Wallet User<br/>User (ISO 23220-4)
@@ -47,9 +51,9 @@ box Verifier entity
     participant VU as Verifier User<br/>User (OpenId4VP)
     participant VE as Verifier application<br/>mdoc verification application<br/>Internet frontend (ISO 23220-4),<br/>Verifier (OpenId4VP)
     participant VB as Verifier backend<br/>Verifier Response Endpoint (OpenId4VP),<br/>Internet Web Service (ISO 23220-4),<br/>Verifier Backend, Verifier App
-end 
+end
 
-rect rgb(2, 2, 2)
+rect rgb(0,0,0,.1)
 note right of WU: Engagement phase
 
     VU ->> VE: (_) interacts
@@ -83,7 +87,7 @@ note right of WU: Engagement phase
     end
 end
 
-rect rgb(2, 2, 2)
+rect rgb(0,0,0,.1)
 note right of WU: device retrieval phase
 
     activate WA
