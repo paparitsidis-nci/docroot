@@ -11,8 +11,8 @@ process.argv.forEach(function (val, index, array) {
 
 const inputFilePath = process.argv[2];
 const outputFilePath = process.argv[3];
-const inputFilePath = "./dist/intro.html";
-const outputFilePath = "./dist/output.html";
+// const inputFilePath = "./dist/intro.html";
+// const outputFilePath = "./dist/output.html";
 
 fs.readFile(inputFilePath, "utf-8", (err, html) => {
   if (err) {
