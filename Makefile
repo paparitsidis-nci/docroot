@@ -11,12 +11,12 @@ all: $(GENERATED)
 
 # Gerenate html, doc from the html
 intro.html: intro.md
-	pandoc -s -o ./dist/$@ $< --toc --metadata title="The European Digital Identity Wallet Reference Implementation" --metadata lang="en" --self-contained --css=styles/style.css -F node_modules/mermaid-filter/index.js
+	pandoc -s -o ./dist/$@ $< --toc --metadata title="The European Digital Identity Wallet Reference Implementation" --metadata lang="en" --self-contained --css=styles/style.css -F node_modules/mermaid-filter/index.js --lua-filter fix-links-multiple-files.lua
 	node fix.js
 	cd ./dist && cp output.html $@ && rm output.html
 
 second.html: second.md
-	pandoc -s -o ./dist/$@ $< --toc --metadata title="The European Digital Identity Wallet Reference Implementation" --metadata lang="en" --self-contained --css=styles/style.css -F node_modules/mermaid-filter/index.js
+	pandoc -s -o ./dist/$@ $< --toc --metadata title="The European Digital Identity Wallet Reference Implementation" --metadata lang="en" --self-contained --css=styles/style.css -F node_modules/mermaid-filter/index.js --lua-filter fix-links-multiple-files.lua
 	node fix.js
 	cd ./dist && cp output.html $@ && rm output.html
 
@@ -26,9 +26,8 @@ serve:
 
 prepare:
 	mkdir -p dist
-	npm install --loglevel silly
+	npm install
 	npm list
-#	npm install --global 'mermaid-filter@~1.4'
 
 clean:
 	echo $(GENERATED)
