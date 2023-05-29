@@ -1,4 +1,4 @@
-:memo: [EUDI Wallet Reference Implementation](#eudi-wallet-reference-implementation) :computer: [Repositories](#repositories) :wrench:[How to Use](#how-to-use) :unlock: [Licensing](#licensing) :heavy_exclamation_mark: [Disclaimer](#disclaimer)
+:memo: [EUDI Wallet Reference Implementation](#eudi-wallet-reference-implementation) :computer: [Repositories](#repositories) :wrench:[How to Use](#how-to-use) :heavy_exclamation_mark: [Disclaimer](#disclaimer)
 
 # EUDI Wallet Reference Implementation 
 ## Overview
@@ -53,10 +53,8 @@ Note: Naming Conventions to be updated accordingly
 |eudi-lib-jvm-presentation-exchange-kt| Implementation of DIF Presentation Exchange v2 specification in Kotlin | [Repository](https://github.com/eu-digital-identity-wallet/presentation-exchange-kt)|
 
 # How to use
-Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo Apps - Remote Use Case](https://github.com/niscy-eudiw/siop-openid4vp-demo-android/blob/documentation/README.md#installation), [Demo App - Proximity Use Case](https://github.com/niscy-eudiw/android-18013/blob/main/README.md), [Verifier for Proximity](https://github.com/niscy-eudiw/android-18013-verifier) and [Verifier for Remote](https://github.com/niscy-eudiw/verifier).
+Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo Apps - Remote Use Case](https://github.com/niscy-eudiw/siop-openid4vp-demo-android/blob/documentation/README.md#installation), [Demo App - Proximity Use Case](https://github.com/niscy-eudiw/android-18013/blob/main/README.md), [Verifier for Proximity](https://github.com/niscy-eudiw/android-18013-verifier#how-to-use-it) and [Verifier for Remote](https://github.com/niscy-eudiw/verifier).
 
-# Licensing
-TBD
 
 # Disclaimer
 TBD
