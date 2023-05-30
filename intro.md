@@ -3,16 +3,15 @@
 # EUDI Wallet Reference Implementation 
 ## Overview
 
-The EUDI Wallet Reference Implementation is built based on the [Architecture Reference Framework](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework) and aims to showcase a robust and interoperable platform for managing verifiable credentials within the European Union.
+The EUDI Wallet Reference Implementation is built based on the [Architecture Reference Framework](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework) and aims at showcasing a robust and interoperable platform for digital identification and authentication based on common standards across the European Union.
 
-Based on the approach followed, a set of business agnostic, re-usable components are being implemented which will be evolved in incremental steps and can be re-used across multiple use-cases (e.g. protocol libraries SIOPv2, OID4VP etc.). Indicatively,
--   Online identification user journey has common elements across several use-cases
--   Proximity electronic attribute attestation (e.g. mDL) sharing is common across several use-cases
+The EUDI Wallet Reference Implementation is based on a set of business agnostic, re-usable components which will be evolved in incremental steps and can be re-used across multiple use-cases. 
 
-In order to demonstrate the capabilities of the EUDI Wallet Reference Implementation, a set of different applications are being implemented. These applications showcase the use cases supported by the EUDI Wallet Reference Implementation, allowing users to understand and familiarize with the corresponding technical capabilities. Indicatively, as part of the EUDI Wallet Reference Implementation, the following set of applications are being delivered:
+Specifically, as part of the EUDI Wallet Reference Implementation, the following set of components are being delivered:
 
--   Demo EUDI Wallet mobile native applications for remote and proximity flows
--   Verifier mobile native applications and web-services for remote and proximity flow
+-   Demo EUDI Wallet mobile native applications for proximity and remote flows
+-   Verifier mobile native applications and web-services for proximity and remote flows
+-   Libraries
 
 Please refer to our documentation and repositories for more detailed information on how to get started, contribute, and engage with the EU Wallet Reference Implementation.
 
@@ -24,6 +23,7 @@ The functional scope of the ‘R0.1’ release includes the first iteration of t
 
 -   **Remote same-device identification and authorisation**
 	-   _Description_: A key use case of the European digital wallet (EUDI Wallet) is to provide secure identification and authentication of users against public and private services of the Relying Parties. This functionality is crucial for public and private Relying Parties that are required to ensure they are communicating with the right person
+	-   _Goal_: Enabling user identification and authentication in online services provided by public or private services
 	-   _Remarks_:
 		-   PID pre-loaded
 		-   App-to-app flow for online authentication
@@ -32,7 +32,7 @@ The functional scope of the ‘R0.1’ release includes the first iteration of t
 
 -   **Proximity Data Transfer**
 	-   _Description_: A key use case of the European digital wallet (EUDI Wallet) is to enable the user to obtain, store and present a mobile Driving Licence in order to prove his/her driving rights
-	-   _Goal_: Enable the user to share data on proximity scenarios, focusing on the mobile Driving License (i.e. mDL) scenario
+	-   _Goal_: Enabling the users to share data on proximity scenarios, focusing on the mobile Driving License (i.e. mDL) scenario
 	-   _Remarks_:
 		-   mDL pre-loaded
 		-   Using QR/BLE proximity protocols
@@ -42,19 +42,38 @@ The functional scope of the ‘R0.1’ release includes the first iteration of t
 # Repositories
 This section provides an overview over the EUDI Reference Implementation project and aims to provide an overview of the key repositories of the project. The table below acts as navigation aid to find the information you are looking for.
 
-Note: Naming Conventions to be updated accordingly
+- **For 'Proximity mDL'**
+
 
 | Name | Description    | Link |
 | -------- | ------- |------- |
-|eudi-app-android-holder-verifier-23220-4-kt| Demo applications for demostrating SIOP-OpenId4VP Kotlin SDK capabilities    | [Repository](https://github.com/niscy-eudiw/siop-openid4vp-demo-android)|
-|eudi-lib-android-mdoc-holder-18013-5| mdoc Holder application (Implementation of ISO/IEC 18013-5 for Android) | [Repository](https://github.com/eu-digital-identity-wallet/android-18013)|
+|eudi-lib-android-iso18013-holder| mdoc Holder application (Implementation of ISO/IEC 18013-5 for Android) | [Repository](https://github.com/eu-digital-identity-wallet/android-18013)|
+|eudi-lib-android-iso18013-holder| mdoc Reader app (The repository will include a link to the compiled app) | [Repository](https://github.com/eu-digital-identity-wallet/android-18013)|
+
+
+- **For 'Same Device Online Authentication'**
+
+| Name | Description    | Link |
+| -------- | ------- |------- |
+|eudi-app-android-holder-verifier-23220-4-kt| Mobile native applications for demostrating SIOP-OpenId4VP Kotlin SDK capabilities | [Repository](https://github.com/niscy-eudiw/siop-openid4vp-demo-android)|
 |eudi-srv-web-verifier-endpoint-23220-4-kt| Web application (backend Restful service) that would allow somebody to trigger the presentation use case | [Repository](https://github.com/eu-digital-identity-wallet/verifier)|
 |eudi-lib-jvm-siop-openid4vp-kt| Implementation of SIOPv2 and OpenID4VP protocols (wallet's role) in Kotlin  | [Repository](https://github.com/eu-digital-identity-wallet/siop-openid4vp-kt)|
 |eudi-lib-jvm-presentation-exchange-kt| Implementation of DIF Presentation Exchange v2 specification in Kotlin | [Repository](https://github.com/eu-digital-identity-wallet/presentation-exchange-kt)|
+
+
 
 # How to use
 Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo Apps - Remote Use Case](https://github.com/niscy-eudiw/siop-openid4vp-demo-android/blob/documentation/README.md#installation), [Demo App - Proximity Use Case](https://github.com/niscy-eudiw/android-18013/blob/main/README.md), [Verifier for Proximity](https://github.com/niscy-eudiw/android-18013-verifier#how-to-use-it) and [Verifier for Remote](https://github.com/niscy-eudiw/verifier).
 
 
 # Disclaimer
-TBD
+The released software is a pre-release version: 
+-  The pre-release is an early endeavor reflecting the efforts of a short timeboxed period, and by no means can be considered as the final product.  
+-  The pre-release may be changed substantially over time, might introduce new features but also may change or remove existing ones, potentially breaking compatibility with your existing code.
+-  The pre-release is limited in functional scope.
+-  The pre-release may contain errors or design flaws and other problems that could cause system or other failures and data loss.
+-  The pre-release has reduced security, privacy, availability, and reliability standards relative to future releases. This could make the software slower, less reliable, or more vulnerable to attacks than mature software.
+-  The pre-release is not yet comprehensively documented. 
+-  Users of the software must perform sufficient engineering and additional testing in order to properly evaluate their application and determine whether any of the open-sourced components is suitable for use in that application.
+-  We strongly recommend to not put this version of the software into production use.
+-  Only the latest version of the software will be supported
