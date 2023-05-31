@@ -16,7 +16,7 @@ Please refer to our documentation and repositories listed in the following secti
 
 ## Pre-release 0.1.0 - Functional Scope
 
-The overall scope of the EUDI Wallet Reference Implementation is split into the pre-releases, ‘pre-0.1.0’(202306), ‘pre-0.2.0’(202309) and the release ‘beta-1.0.0’ (202312) considered a minimum viable product.
+The overall scope of the EUDI Wallet Reference Implementation is split into the pre-releases, ‘pre-0.1.0’, ‘pre-0.2.0’ and the release ‘beta-1.0.0’ considered a minimum viable product.
 
 The functional scope of the ‘pre-0.1.0’ release includes the first iteration of two main use cases of the EUDI Wallet Reference Implementation, which are 'Identification and Authentication to access online services' and 'Proximity Data Sharing - Mobile Driving License'. Further details about the corresponding use cases are listed below:
 
