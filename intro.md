@@ -62,7 +62,7 @@ This section provides an overview over the EUDI Reference Implementation project
 
 
 # How to use
-Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo App - Proximity Use Case](https://github.com/eu-digital-identity-wallet/android-18013/blob/main/README.md), [Verifier for Proximity](https://github.com/eu-digital-identity-wallet/android-18013-verifier#how-to-use-it), [Demo Apps - Remote Use Case](https://github.com/eu-digital-identity-wallet/siop-openid4vp-demo-android/blob/documentation/README.md#installation) and [Verifier for Remote](https://github.com/eu-digital-identity-wallet/verifier).
+Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo App - Proximity Use Case](https://github.com/eu-digital-identity-wallet/android-18013/blob/main/README.md), [Verifier for Proximity](https://github.com/eu-digital-identity-wallet/android-18013-verifier#how-to-use-it), [Demo Apps - Remote Use Case](https://github.com/eu-digital-identity-wallet/siop-openid4vp-demo-android/blob/documentation/README.md) and [Verifier for Remote](https://github.com/eu-digital-identity-wallet/verifier).
 
 
 # Disclaimer
