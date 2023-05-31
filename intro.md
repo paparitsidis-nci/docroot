@@ -14,7 +14,7 @@ Specifically, as part of the EUDI Wallet Reference Implementation, the following
 
 Please refer to our documentation and repositories listed in the following sections for more detailed information on how to get started, contribute, and engage with the EU Wallet Reference Implementation.
 
-## Release 'R0.1' - Functional Scope
+## Pre-release 0.1.0 - Functional Scope
 
 The overall scope of the EUDI Wallet Reference Implementation is split into the pre-releases, ‘pre-0.1.0’(202306), ‘pre-0.2.0’(202309) and the release ‘beta-1.0.0’ (202312) considered a minimum viable product.
 
