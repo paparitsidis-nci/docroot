@@ -46,23 +46,23 @@ This section provides an overview over the EUDI Reference Implementation project
 
 | Name | Description    | Link |
 | -------- | ------- |------- |
-|eudi-lib-android-iso18013-holder| mdoc Holder application (Implementation of ISO/IEC 18013-5 for Android) | [Repository](https://github.com/eu-digital-identity-wallet/android-18013)|
-|eudi-lib-android-iso18013-holder| mdoc Reader app (The repository will include a link to the compiled app) | [Repository](https://github.com/eu-digital-identity-wallet/android-18013)|
+|eudi-lib-android-iso18013-holder| mdoc Holder application (Implementation of ISO/IEC 18013-5 for Android) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder)|
+|eudi-lib-android-iso18013-holder| mdoc Reader app (The repository will include a link to the compiled app) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder)|
 
 
 - **For 'Same Device Online Authentication'**
 
 | Name | Description    | Link |
 | -------- | ------- |------- |
-|eudi-app-android-holder-verifier-23220-4-kt| Mobile native applications for demonstrating SIOP-OpenId4VP Kotlin SDK capabilities | [Repository](https://github.com/eu-digital-identity-wallet/siop-openid4vp-demo-android)|
-|eudi-srv-web-verifier-endpoint-23220-4-kt| Web application (backend Restful service) that would allow somebody to trigger the presentation use case | [Repository](https://github.com/eu-digital-identity-wallet/verifier)|
-|eudi-lib-jvm-siop-openid4vp-kt| Implementation of SIOPv2 and OpenID4VP protocols (wallet's role) in Kotlin  | [Repository](https://github.com/eu-digital-identity-wallet/siop-openid4vp-kt)|
-|eudi-lib-jvm-presentation-exchange-kt| Implementation of DIF Presentation Exchange v2 specification in Kotlin | [Repository](https://github.com/eu-digital-identity-wallet/presentation-exchange-kt)|
+|eudi-app-android-holder-verifier-23220-4-kt| Mobile native applications for demonstrating SIOP-OpenId4VP Kotlin SDK capabilities | [Repository](https://github.com/eu-digital-identity-wallet/eudi-app-android-holder-verifier-23220-4-kt)|
+|eudi-srv-web-verifier-endpoint-23220-4-kt| Web application (backend Restful service) that would allow somebody to trigger the presentation use case | [Repository](https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-endpoint-23220-4-kt)|
+|eudi-lib-jvm-siop-openid4vp-kt| Implementation of SIOPv2 and OpenID4VP protocols (wallet's role) in Kotlin  | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-siop-openid4vp-kt)|
+|eudi-lib-jvm-presentation-exchange-kt| Implementation of DIF Presentation Exchange v2 specification in Kotlin | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-presentation-exchange-kt)|
 
 
 
 # How to use
-Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo App - Proximity Use Case](https://github.com/eu-digital-identity-wallet/android-18013/blob/main/README.md), [Verifier for Proximity](https://github.com/eu-digital-identity-wallet/android-18013-verifier#how-to-use-it), [Demo Apps - Remote Use Case](https://github.com/eu-digital-identity-wallet/eudi-app-android-holder-verifier-23220-4-kt/blob/main/README.md) and [Verifier for Remote](https://github.com/eu-digital-identity-wallet/verifier).
+Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo App - Proximity Use Case](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder/blob/main/README.md), [Verifier for Proximity](https://github.com/eu-digital-identity-wallet/android-18013-verifier/blob/main/README.md), [Demo Apps - Remote Use Case](https://github.com/eu-digital-identity-wallet/eudi-app-android-holder-verifier-23220-4-kt/blob/main/README.md) and [Verifier for Remote](https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-endpoint-23220-4-kt/blob/main/README.md).
 
 
 # Disclaimer
