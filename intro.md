@@ -22,7 +22,7 @@ The functional scope of the ‘pre-0.1.0’ release includes the first iteration
 
 -   **Remote same-device identification and authorisation**
 	-   _Description_: A key use case of the European digital wallet (EUDI Wallet) is to provide secure identification and authentication of users against public and private services of the Relying Parties. This functionality is crucial for public and private Relying Parties that are required to ensure they are communicating with the right person
-	-   _Goal_: EEnabling user identification and authentication in online services provided by public or private services
+	-   _Goal_: Enabling user identification and authentication in online services provided by public or private services
 	-   _Remarks_:
 		-   PID pre-loaded
 		-   App-to-app flow for online authentication
