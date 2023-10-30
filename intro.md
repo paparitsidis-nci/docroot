@@ -14,28 +14,32 @@ Specifically, as part of the EUDI Wallet Reference Implementation, the following
 
 Please refer to our documentation and repositories listed in the following sections for more detailed information on how to get started, contribute, and engage with the EU Wallet Reference Implementation.
 
-## Pre-release 0.1.0 - Functional Scope
+## Functional Scope
 
-The current scope of the EUDI Wallet Reference Implementation is split into the pre-releases, ‘pre-0.1.0’, ‘pre-0.2.0’ and the release ‘beta-1.0.0’ considered a minimum viable product.
+The current scope of the EUDI Wallet Reference Implementation includes first iterations of key functionalities, which are Sharing and Presenting PID and mDL in Remote and Proximity. Based on these functionalities, a broad set of Use Cases are supported as a minimum, such as:
+- mDL presentation
+- Access to online services (PID) 
+- Verification of Age
+- Payments
+- QES
+- and others
 
-The functional scope of the ‘pre-0.1.0’ release includes the first iteration of two main use cases of the EUDI Wallet Reference Implementation, which are 'Identification and Authentication to access online services' and 'Proximity Data Sharing - Mobile Driving License'. Further details about the corresponding use cases are listed below:
+<Details>
+ <summary><i>Functional Scope Remarks </i></summary> <br>
 
--   **Remote same-device identification and authorisation**
-	-   _Description_: A key use case of the European digital wallet (EUDI Wallet) is to provide secure identification and authentication of users against public and private services of the Relying Parties. This functionality is crucial for public and private Relying Parties that are required to ensure they are communicating with the right person
-	-   _Goal_: Enabling user identification and authentication in online services provided by public or private services
-	-   _Remarks_:
-		-   PID pre-loaded
-		-   App-to-app flow for online authentication
-	-   _Applicable Platform_: Android
+As of November 2023, the following remarks shall be considered in relation to the provided functionalities.
 
+**Remote identification and authorisation** <br>
+- Light (mock) PID Issuance process
+- Same-device and cross-device flows for online authentication and authorisation (OpenID4VP transfering mDoc for  remote authentication and authorisation)
+- Applicable platofrms: Android, iOS
 
--   **Proximity Data Transfer**
-	-   _Description_: A key use case of the European digital wallet (EUDI Wallet) is to enable the user to obtain, store and present a mobile Driving License in order to prove his/her driving rights
-	-   _Goal_: Enabling the users to share data on proximity scenarios, focusing on the mobile Driving License (i.e. mDL) scenario
-	-   _Remarks_:
-		-   mDL pre-loaded
-		-   Using QR/BLE proximity protocols
-	-   _Applicable Platform_: Android
+**Proximity Data Transfer**
+- mDL pre-loaded item
+- Using QR/BLE proximity protocols
+- NFC tag for device engagement support (static hand-over)
+- Applicable platofrms: Android, iOS
+</Details>
 
 
 # Repositories
@@ -43,23 +47,31 @@ This section provides an overview over the EUDI Reference Implementation project
 
 - **For 'Proximity mDL'**
 
-
 | Name | Description    | Link |
 | -------- | ------- |------- |
-|eudi-lib-android-iso18013-holder| mdoc Holder application (Implementation of ISO/IEC 18013-5 for Android) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder)|
-|eudi-lib-android-iso18013-holder| mdoc Reader app (The repository will include a link to the compiled app) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder)|
+|eudi-lib-android-iso18013-holder| mdoc Holder application (Implementation of ISO/IEC 18013-5 for Android | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder/releases/tag/r.0.2)|
+|eudi-app-ios-iso18013-holder-demo| mdoc Holder application (Implementation of ISO/IEC 18013-5 for iOS | [Repository](https://github.com/eu-digital-identity-wallet/eudi-app-ios-iso18013-holder-demo/tree/Release/r0.2)|
+|eudi-lib-ios-iso18013-security| Implementation of mDoc security mechanisms according to ISO/IEC 18013-5 standard (iOS) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-iso18013-security)|
+|eudi-lib-ios-iso18013-data-transfer| Implementation of the mDoc data transfer library according to ISO/IEC 18013-5 standard (iOS) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-iso18013-data-transfer)|
+|eudi-lib-ios-iso18013-data-model| Implementation of the mDoc data model according to ISO/IEC 18013-5 standard (iOS) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-iso18013-data-model)|
 
 
 - **For 'Same Device Online Authentication'**
 
 | Name | Description    | Link |
 | -------- | ------- |------- |
-|eudi-app-android-holder-verifier-23220-4-kt| Mobile native applications for demonstrating SIOP-OpenId4VP Kotlin SDK capabilities | [Repository](https://github.com/eu-digital-identity-wallet/eudi-app-android-holder-verifier-23220-4-kt)|
-|eudi-srv-web-verifier-endpoint-23220-4-kt| Web application (backend Restful service) that would allow somebody to trigger the presentation use case | [Repository](https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-endpoint-23220-4-kt)|
-|eudi-lib-jvm-siop-openid4vp-kt| Implementation of SIOPv2 and OpenID4VP protocols (wallet's role) in Kotlin  | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-siop-openid4vp-kt)|
-|eudi-lib-jvm-presentation-exchange-kt| Implementation of DIF Presentation Exchange v2 specification in Kotlin | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-presentation-exchange-kt)|
+|eudi-lib-jvm-presentation-exchange-kt| Implementation of DIF Presentation Exchange v2 specification in Kotlin | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-presentation-exchange-kt/tree/release/0.1.0)|
+|eudi-lib-ios-presentation-exchange-swift| Implementation of DIF Presentation Exchange v2 specification in Swift (iOS) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-presentation-exchange-swift/releases/tag/v0.0.39)|
+|eudi-lib-jvm-siop-openid4vp-kt| Implementation of SIOPv2 and OpenID4VP protocols (wallet's role) in Kotlin  | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-siop-openid4vp-kt/tree/release/0.2.0)|
+|eudi-lib-ios-siop-openid4vp-swift| Implementation of SIOPv2 and OpenID4VP protocols (wallet's role) in Swift (iOS) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-siop-openid4vp-swift)|
+|eudi-lib-sdjwt-swift| EUDI SD-JWT in Swift | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-sdjwt-swift/releases/tag/0.0.1)|
+|eudi-lib-jvm-sdjwt-kt| EUDI SD-JWT in JVM Kotlin | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-sdjwt-kt/tree/release/0.1.0)|
 
+- **For 'Light Issuing 'PID'**
 
+| Name | Description    | Link |
+| -------- | ------- |------- |
+|eudi-lib-web-issuing-eudiw-py| Implementation of a light issuing approach for the PID in Python | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-web-issuing-eudiw-py/tree/release/0.2.0)|
 
 # How to use
 Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo App - Proximity Use Case](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder/blob/main/README.md), [Verifier for Proximity](https://github.com/eu-digital-identity-wallet/android-18013-verifier/blob/main/README.md), [Demo Apps - Remote Use Case](https://github.com/eu-digital-identity-wallet/eudi-app-android-holder-verifier-23220-4-kt/blob/main/README.md) and [Verifier for Remote](https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-endpoint-23220-4-kt/blob/main/README.md).
