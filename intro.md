@@ -45,7 +45,7 @@ As of November 2023, the following remarks shall be considered in relation to th
 # Repositories
 This section provides an overview over the EUDI Reference Implementation project and aims to provide an overview of the key repositories of the project. The table below acts as navigation aid to find the information you are looking for.
 
-- **For 'Proximity mDL'**
+- **For 'Proximity Presentation (mDL)'**
 
 | Name | Description    | Link |
 | -------- | ------- |------- |
@@ -56,7 +56,7 @@ This section provides an overview over the EUDI Reference Implementation project
 |eudi-lib-ios-iso18013-data-model| Implementation of the mDoc data model according to ISO/IEC 18013-5 standard (iOS) | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-iso18013-data-model)|
 
 
-- **For 'Same Device Online Authentication'**
+- **For 'Remote Data Sharing (PID)'**
 
 | Name | Description    | Link |
 | -------- | ------- |------- |
@@ -67,7 +67,7 @@ This section provides an overview over the EUDI Reference Implementation project
 |eudi-lib-sdjwt-swift| EUDI SD-JWT in Swift | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-sdjwt-swift/releases/tag/0.0.1)|
 |eudi-lib-jvm-sdjwt-kt| EUDI SD-JWT in JVM Kotlin | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-sdjwt-kt/tree/release/0.1.0)|
 
-- **For 'Light Issuing 'PID'**
+- **For 'Light' Issuing 'PID'**
 
 | Name | Description    | Link |
 | -------- | ------- |------- |
