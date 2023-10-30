@@ -74,7 +74,7 @@ This section provides an overview over the EUDI Reference Implementation project
 |eudi-lib-web-issuing-eudiw-py| Implementation of a light issuing approach for the PID in Python | [Repository](https://github.com/eu-digital-identity-wallet/eudi-lib-web-issuing-eudiw-py/tree/release/0.2.0)|
 
 # How to use
-Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo App - Proximity Use Case](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder/blob/main/README.md), [Verifier for Proximity](https://github.com/eu-digital-identity-wallet/android-18013-verifier/blob/main/README.md), [Demo Apps - Remote Use Case](https://github.com/eu-digital-identity-wallet/eudi-app-android-holder-verifier-23220-4-kt/blob/main/README.md) and [Verifier for Remote](https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-endpoint-23220-4-kt/blob/main/README.md).
+Instructions for installing and using the applicable applications/libraries can be found in the corresponding 'ReadMe' files, i.e. for the [Demo App - Proximity Use Case](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder/blob/main/README.md), [Verifier for Proximity](https://github.com/eu-digital-identity-wallet/android-18013-verifier/blob/main/README.md) and [Verifier for Remote](https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-endpoint-23220-4-kt/blob/main/README.md).
 
 
 # Disclaimer
