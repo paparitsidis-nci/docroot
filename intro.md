@@ -24,14 +24,14 @@ The current scope of the EUDI Wallet Reference Implementation includes first ite
 - QES
 - and others
 
-<Details>
+<Details open>
  <summary><i>Functional Scope Remarks </i></summary> <br>
 
 As of November 2023, the following remarks shall be considered in relation to the provided functionalities.
 
 **Remote identification and authorisation** <br>
-- Light (mock) PID Issuance process
-- Same-device and cross-device flows for online authentication and authorisation (OpenID4VP transfering mDoc for  remote authentication and authorisation)
+- Light (mock) PID Issuance process (provides test PID and and mDL issuing service in mDoc and soon in SD-JWT-VC format)
+- Same-device and cross-device flows for online authentication and authorisation (OpenID4VP transfering mDoc for remote authentication and authorisation)
 - Applicable platofrms: Android, iOS
 
 **Proximity Data Transfer**
