@@ -1,9 +1,19 @@
-❓ [EUDI Wallet Reference Implementation](#frequently-asked-questions)  :information_source:[About the project](#about-the-project)
+❓ [Frequently Asked Questions](#frequently-asked-questions)  :information_source:[About the project](#about-the-project)
 
 # EUDI Wallet Reference Implementation 
 ## Frequently Asked Questions
 
 A list of freqeuntly asked questions are consolidated in order to assist you with possible queries related to the EUDI Wallet Reference Implementation. Please refer to the [EUDI Wallet Reference Implementation](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework) overview page for further information
+
+<Details>
+ <summary>What are the specifications on which the Wallet Reference Implementation is based on?</summary> 
+The Wallet Reference Implementation is based on the <a href="https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework">Architecture Reference Framework</a>.
+</Details>
+
+<Details>
+ <summary>Is there a process allowing me to post my comments or contributions to the Wallet Reference Implementation?</summary> 
+Comments and contributions on the codebase of the Wallet Reference Implementation are welcomed through the corresponding <a href="https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework">Github space</a>. Additionally, a designated mailbox <a href="CNECT-EUDIW-SUPPORT@ec.europa.eu">CNECT-EUDIW-SUPPORT@ec.europa.eu</a> is available where any queries related to the Wallet Reference Implementation can be addressed.
+</Details>
 
 <Details>
  <summary>What are the programming languages that are being used?</summary> 
@@ -17,12 +27,12 @@ The baseline for the reference implementation is the ARF. Hence, we will be supp
 
 <Details>
  <summary>What are the formats that we will be using for PID?	</summary> 
-According to the ARF and the current PID rulebook 1.0.0., we will be supporting both mDoc and SD-JWT format.
+According to the ARF and the corresponding PID rulebook, we will be supporting both mDoc and SD-JWT format.
 </Details>
 
 <Details>
  <summary>What are the formats that we will be using for mDL, (Q)EAA?	</summary> 
-According to the ARF and the current mDL rulebook 1.0.0., we will be supporting both mDoc and SD-JWT format.
+According to the ARF and the corresponding mDL rulebook, we will be supporting both mDoc and SD-JWT format.
 </Details>
 
 
