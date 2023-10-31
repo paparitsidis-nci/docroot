@@ -22,7 +22,7 @@ According to the ARF and the current PID rulebook 1.0.0., we will be supporting 
 
 <Details>
  <summary>What are the formats that we will be using for mDL, (Q)EAA?	</summary> 
-According to the ARF and the current PID rulebook 1.0.0., we will be supporting both mDoc and SD-JWT format.
+According to the ARF and the current mDL rulebook 1.0.0., we will be supporting both mDoc and SD-JWT format.
 </Details>
 
 
