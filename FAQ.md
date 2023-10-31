@@ -6,18 +6,23 @@
 A list of freqeuntly asked questions are consolidated in order to assist you with possible queries related to the EUDI Wallet Reference Implementation. Please refer to the [EUDI Wallet Reference Implementation](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework) overview page for further information
 
 <Details>
- <summary>Question 1</summary> 
-Answer 1
+ <summary>What are the programming languages that are being used?</summary> 
+For Android it will mainly be Kotlin and for the iOS it will mainly be Swift (so it is the preferred native languages of each platform). Other languages will also be used in the ecosystem of the EUDIW.
 </Details>
 
 <Details>
- <summary>Question 2</summary> 
-Answer 2
+ <summary>What are the protocols supported for online – remote authentication? </summary> 
+The baseline for the reference implementation is the ARF. Hence, we will be supporting OID4VP using the profile of ISO23220-4 Annex B.
 </Details>
 
 <Details>
- <summary>Question 3</summary> 
-Answer 3
+ <summary>What are the formats that we will be using for PID?	</summary> 
+According to the ARF and the current PID rulebook 1.0.0., we will be supporting both mDoc and SD-JWT format.
+</Details>
+
+<Details>
+ <summary>What are the formats that we will be using for mDL, (Q)EAA?	</summary> 
+According to the ARF and the current PID rulebook 1.0.0., we will be supporting both mDoc and SD-JWT format.
 </Details>
 
 
