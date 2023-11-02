@@ -45,7 +45,7 @@ As of November 2023, the following remarks shall be considered in relation to th
 # Repositories
 This section provides an overview over the EUDI Reference Implementation project and aims to provide an overview of the key repositories of the project. The table below acts as navigation aid to find the information you are looking for.
 
-
+## Libraries
 
 - **Proximity Sharing iOS Libraries**
 
@@ -55,17 +55,12 @@ This section provides an overview over the EUDI Reference Implementation project
 |Data Transfer| Implementation of the mDoc data-transfer library according to ISO/IEC 18013-5| [eudi-lib-ios-iso18013-data-transfer](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-iso18013-data-transfer)|
 |Data Model| Implementation of the mDoc data-model according to ISO/IEC 18013-5. | [eudi-lib-ios-iso18013-data-model](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-iso18013-security)|
 
-- **Demo App for iOS**
+
+- **Proximity Sharing Android libraries**
 
 | Area| Description | Repository|
 | -------- | ------- |------- |
-|Demo App| Implementation of ISO/IEC 18013-5 for iOS. Includes Demo App that demonstrates the Proximity capability.	 | [eudi-app-ios-iso18013-holder-demo](https://github.com/eu-digital-identity-wallet/eudi-app-ios-iso18013-holder-demo/tree/Release/r0.2)|
-
-- **Proximity Sharing Android libraries and Demo Apps for Android**
-
-| Area| Description | Repository|
-| -------- | ------- |------- |
-|Library and Demo Apps| Implementation of ISO/IEC 18013-5 for Android (full library with mdoc model management, security, transfer, document management). | [eudi-lib-android-iso18013-holder](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder/releases/tag/r.0.2) |
+|Library and Demo Apps| Implementation of ISO/IEC 18013-5 for Android (full library with mdoc model management, security, transfer, document management). It also includes Demo App, demonstrating the following capabilities, Proximity presentation,  Same Device Online Authentication, and light issuing of PID.| [eudi-lib-android-iso18013-holder](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder/releases/tag/r.0.2) |
 
 
 - **Online Presentation Android Libraries**
@@ -84,6 +79,7 @@ This section provides an overview over the EUDI Reference Implementation project
 |SIOPv2 & OpenID4VP protocols| Implementation of SIOPv2 and OpenID4VP protocols (wallet's role) in Swift.| [eudi-lib-ios-siop-openid4vp-swift](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-siop-openid4vp-swift)|
 |SD-JWT| SD-JWT library for creating and verifying in JVM Swift. | [eudi-lib-sdjwt-swift](https://github.com/eu-digital-identity-wallet/eudi-lib-sdjwt-swift/releases/tag/0.0.1)|
 
+## Verifier and Demo Apps
 - **Verifier Apps**
 
 | Area| Description | Repository|
@@ -91,7 +87,15 @@ This section provides an overview over the EUDI Reference Implementation project
 |Web Verifier| Demo Web Verifier UI application (Frontend) that acts as a Verifier/RP trusted end-point (encoded responses only). | [eudi-web-verifier](https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-endpoint-23220-4-kt) |
 |Restful API (web-services)| Demo Web Verifier application (Backend Restful service) that acts as a Verifier/RP trusted end-point (encoded responses only).| [eudi-srv-web-verifier-endpoint-23220-4-kt](https://github.com/eu-digital-identity-wallet/eudi-web-verifier)|
 
-- **PID Issuance**
+- **Demo App for iOS**
+
+| Area| Description | Repository|
+| -------- | ------- |------- |
+|Demo App| Implementation of ISO/IEC 18013-5 for iOS. Includes Demo App that demonstrates the Proximity capability.	 | [eudi-app-ios-iso18013-holder-demo](https://github.com/eu-digital-identity-wallet/eudi-app-ios-iso18013-holder-demo/tree/Release/r0.2)|
+
+## Other Libraries
+
+- **Light PID Issuance**
 
 | Area| Description | Repository|
 | -------- | ------- |------- |
