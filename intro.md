@@ -13,7 +13,7 @@ Specifically, as part of the EUDI Wallet Reference Implementation, the following
 -   [Demo EUDI Wallet mobile native applications for proximity and remote flows](https://github.com/niscy-eudiw/docroot/blob/main/intro.md#wallet-ui-and-demo-apps)
 -   [Verifier mobile native applications and web-services for proximity and remote flows](https://github.com/niscy-eudiw/docroot/blob/main/intro.md#verifier-and-eco-system-apps)
 
-Please refer to our documentation and repositories listed in the following sections for more detailed information on how to get started, contribute, and engage with the EU Wallet Reference Implementation.
+Please refer to our documentation and repositories listed in the following sections for more detailed information on how to get started, contribute, and engage with the EUDI Wallet Reference Implementation.
 
 ## Functional Scope
 
