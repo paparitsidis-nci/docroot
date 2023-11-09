@@ -17,13 +17,14 @@ Please refer to our documentation and repositories listed in the following secti
 
 ## Functional Scope
 
-The current scope of the EUDI Wallet Reference Implementation includes first iterations of key functionalities, which are Sharing and Presenting PID and mDL in Remote and Proximity. Based on these functionalities, a broad set of Use Cases are supported as a minimum, such as:
+The current scope of the EUDI Wallet Reference Implementation includes first iterations of key functionalities: Sharing and Presenting Personal Identification Data (PID) and Mobile Driving License (mDL) in Remote and Proximity scenarios. Based on these functionalities, a broad set of Use Cases are supported as a minimum, such as:
 - Mobile Driving License
 - Accessing online public and private services 
 - Opening a bank account
 - SIM registration
-- Initiating a payment
-- Signing document
+- Payment authorisation
+- Authenticating a third-party service to sign documents
+- Etc.
 
 <Details open>
  <summary><i>Functional Scope Remarks </i></summary> <br>
@@ -31,7 +32,7 @@ The current scope of the EUDI Wallet Reference Implementation includes first ite
 As of November 2023, the following remarks shall be considered in relation to the provided functionalities.
 
 **Remote identification and authorisation** <br>
-- Light (mock) PID Issuance process (provides test PID and mDL issuing service in mDoc and soon in SD-JWT-VC format)
+- Light (mock) PID Issuance process (provides test PID issuing service in mDoc and soon in SD-JWT-VC format)
 - Same-device and cross-device flows for online authentication and authorization (OpenID4VP transfering mDoc for remote authentication and authorisation)
 - Applicable platforms: Android, iOS
 
@@ -44,9 +45,16 @@ As of November 2023, the following remarks shall be considered in relation to th
 
 
 # Repositories
-This section provides an overview over the EUDI Reference Implementation project and aims to provide an overview of the key repositories of the project. The table below acts as navigation aid to find the information you are looking for.
+This section provides an overview of the key repositories of the EUDI Reference Implementation. The table below acts as navigation aid to find the information you are looking for.
 
 ## Libraries
+
+### Wallet Core Android Library
+
+| Area          | Description                                                                   | Repository                                                                                                               |
+|---------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Orchestrator/Core | This repository contains the EUDI Wallet Core library for Android       | [eudi-lib-android-wallet-core](https://github.com/eu-digital-identity-wallet/eudi-lib-android-wallet-core)           |
+
 
 ### Proximity Sharing iOS Libraries
 
@@ -57,11 +65,12 @@ This section provides an overview over the EUDI Reference Implementation project
 | Data Model    | Implementation of the mDoc data-model according to ISO/IEC 18013-5.           | [eudi-lib-ios-iso18013-data-model](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-iso18013-security)         |
 
 
-### Proximity Sharing Android libraries
+### Proximity Sharing Android Libraries
 
-| Area                  | Description                                                                                                                                                                                                                                                                                  | Repository                                                                                                         |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Library and Demo Apps | Implementation of ISO/IEC 18013-5 for Android (full library with mdoc model management, security, transfer, document management). It also includes Demo App, demonstrating the following capabilities, Proximity presentation,  Same Device Online Authentication, and light issuing of PID. | [eudi-lib-android-iso18013-holder](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-holder) |
+| Area          | Description                                                                   | Repository                                                                                                               |
+|---------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Data Transfer | This library provides a set of classes to manage the transfer of documents in an EUDI ISO 18013-5 Android Wallet. | [eudi-lib-ios-iso18013-data-transfer](https://github.com/eu-digital-identity-wallet/eudi-lib-android-iso18013-data-transfer) |
+| Data Model    | This library provides a set of classes to manage documents in an EUDI ISO 18013-5 Android Wallet.       | [eudi-lib-android-wallet-document-manager](https://github.com/eu-digital-identity-wallet/eudi-lib-android-wallet-document-manager)        |
 
 
 ### Online Presentation Android Libraries
@@ -80,7 +89,21 @@ This section provides an overview over the EUDI Reference Implementation project
 | SIOPv2 & OpenID4VP protocols | Implementation of SIOPv2 and OpenID4VP protocols (wallet's role) in Swift. | [eudi-lib-ios-siop-openid4vp-swift](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-siop-openid4vp-swift)               |
 | SD-JWT                       | SD-JWT library for creating and verifying SD-JWT in JVM Swift.             | [eudi-lib-sdjwt-swift](https://github.com/eu-digital-identity-wallet/eudi-lib-sdjwt-swift)                                         |
 
-## Verifier and Demo Apps
+## UI Libraries and Demo Apps
+
+### Wallet UI Android Library and Demo App for Android
+
+| Area     | Description                                                                                               | Repository                                                                                                           |
+|----------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| UI / Demo App | Implementation of wallet UI for Android. Currently, it also includes Demo App, demonstrating the following capabilities, Proximity presentation, Same Device Online Authentication, and light issuing of PID.	 | [eudi-app-android-wallet-ui](https://github.com/eu-digital-identity-wallet/eudi-app-android-wallet-ui) |
+
+### Demo App for iOS
+
+| Area     | Description                                                                                               | Repository                                                                                                           |
+|----------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| Demo App | Implementation of ISO/IEC 18013-5 for iOS. Includes Demo App that demonstrates the Proximity capability.	 | [eudi-app-ios-iso18013-holder-demo](https://github.com/eu-digital-identity-wallet/eudi-app-ios-iso18013-holder-demo) |
+
+## Verifier and Eco-System Apps
 
 ### Verifier Apps
 
@@ -89,11 +112,6 @@ This section provides an overview over the EUDI Reference Implementation project
 | Web Verifier               | Demo Web Verifier UI application (Frontend) that acts as a Verifier/RP trusted end-point (encoded responses only).             | [eudi-web-verifier](https://github.com/eu-digital-identity-wallet/eudi-web-verifier)                                                 |
 | Restful API (web-services) | Demo Web Verifier application (Backend Restful service) that acts as a Verifier/RP trusted end-point (encoded responses only). | [eudi-srv-web-verifier-endpoint-23220-4-kt](https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-endpoint-23220-4-kt) |
 
-### Demo App for iOS
-
-| Area     | Description                                                                                               | Repository                                                                                                           |
-|----------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Demo App | Implementation of ISO/IEC 18013-5 for iOS. Includes Demo App that demonstrates the Proximity capability.	 | [eudi-app-ios-iso18013-holder-demo](https://github.com/eu-digital-identity-wallet/eudi-app-ios-iso18013-holder-demo) |
 
 ## Other
 
