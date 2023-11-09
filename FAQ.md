@@ -3,7 +3,7 @@
 # EUDI Wallet Reference Implementation 
 ## Frequently Asked Questions
 
-A list of freqeuntly asked questions are consolidated in order to assist you with possible queries related to the EUDI Wallet Reference Implementation. Please refer to the [EUDI Wallet Reference Implementation](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework) overview page for further information
+A list of freqeuntly asked questions are consolidated in order to assist you with possible queries related to the EUDI Wallet Reference Implementation. Please refer to the [EUDI Wallet Reference Implementation](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework) overview page for further information.
 
 <Details>
  <summary>What are the specifications on which the Wallet Reference Implementation is based on?</summary> 
@@ -17,7 +17,7 @@ Comments and contributions on the codebase of the Wallet Reference Implementatio
 
 <Details>
  <summary>What are the programming languages that are being used?</summary> 
-For Android it will mainly be Kotlin and for the iOS it will mainly be Swift (so it is the preferred native languages of each platform). Other languages will also be used in the ecosystem of the EUDIW.
+For Android it will mainly be Kotlin and for the iOS it will mainly be Swift (so it is the preferred native language of each platform). Other languages will also be used in the ecosystem of the EUDIW.
 </Details>
 
 <Details>
@@ -26,13 +26,18 @@ The baseline for the reference implementation is the ARF. Hence, we will be supp
 </Details>
 
 <Details>
- <summary>What are the formats that we will be using for PID?	</summary> 
+ <summary>What are the formats that we will be using for Personal Identification Data (PID)?	</summary> 
 According to the ARF and the corresponding PID rulebook, we will be supporting both mDoc and SD-JWT format.
 </Details>
 
 <Details>
  <summary>What are the formats that we will be using for mDL, (Q)EAA?	</summary> 
 According to the ARF and the corresponding mDL rulebook, we will be supporting both mDoc and SD-JWT format.
+</Details>
+
+<Details>
+ <summary>What is the testing scope for the Wallet Reference Implementation?	</summary> 
+Security and units tests have been executed; details of the corresponding tests can be found in the corresponding repositories.
 </Details>
 
 
