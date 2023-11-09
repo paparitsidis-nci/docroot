@@ -33,7 +33,7 @@ As of November 2023, the following remarks shall be considered in relation to th
 
 **Remote Presentation** <br>
 - Light (mock) PID Issuance process (provides test PID issuing service in mDoc and soon in SD-JWT-VC format)
-- Same-device and cross-device flows for online authentication and authorization (OpenID4VP transfering mDoc for remote authentication and authorisation)
+- Same-device and cross-device flows for online authentication and authorization (OpenID4VP transferring mDoc for remote authentication and authorisation)
 - Applicable platforms: Android, iOS
 
 **Proximity Sharing**
