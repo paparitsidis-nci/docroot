@@ -3,7 +3,7 @@
 # EUDI Wallet Reference Implementation 
 ## Frequently Asked Questions
 
-A list of freqeuntly asked questions are consolidated in order to assist you with possible queries related to the EUDI Wallet Reference Implementation. Please refer to the [EUDI Wallet Reference Implementation](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework) overview page for further information.
+A list of freqeuntly asked questions are consolidated in order to assist you with possible queries related to the EUDI Wallet Reference Implementation. Please refer to the [Architecture Reference Framework](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework) for the corresponding technical specifications and the [EUDI Wallet Reference Implementation](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework) overview page for further information.
 
 <Details>
  <summary>What are the specifications on which the Wallet Reference Implementation is based on?</summary> 
@@ -37,12 +37,12 @@ The baseline for the reference implementation is the ARF. Hence, we will be supp
 
 <Details>
  <summary>What are the formats that we will be using for Personal Identification Data (PID)?	</summary> 
-According to the ARF and the corresponding PID rulebook, we will be supporting both mDoc and SD-JWT format. Alternative formats such as SD-JWT VC will be incorporated in a future release.
+According to the ARF and the corresponding PID rulebook, we will be supporting both mDoc and SD-JWT format. At the momment, mDoc (CBOR) is supported. Alternative formats such as SD-JWT VC will be incorporated in a future release end to end too.
 </Details>
 
 <Details>
  <summary>What are the formats that we will be using for mDL, (Q)EAA?	</summary> 
-According to the ARF and the corresponding mDL rulebook, we will be supporting both mDoc and SD-JWT format. Alternative formats such as SD-JWT VC will be incorporated in a future release.
+According to the ARF and the corresponding PID rulebook, we will be supporting both mDoc and SD-JWT format. At the momment, mDoc (CBOR) is supported. Alternative formats such as SD-JWT VC will be incorporated in a future release end to end too.
 </Details>
 
 <Details>
