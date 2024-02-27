@@ -26,13 +26,23 @@ The baseline for the reference implementation is the ARF. Hence, we will be supp
 </Details>
 
 <Details>
+ <summary>What are the protocols supported for proximity sharing? </summary> 
+The baseline for the reference implementation is the ARF. Hence, we will be supporting ISO/IEC 18013-5.
+</Details>
+
+<Details>
+ <summary>What are the protocols supported for issuing? </summary> 
+The baseline for the reference implementation is the ARF. Hence, we will be supporting OpenId4VCI-draft 12.
+</Details>
+
+<Details>
  <summary>What are the formats that we will be using for Personal Identification Data (PID)?	</summary> 
-According to the ARF and the corresponding PID rulebook, we will be supporting both mDoc and SD-JWT format.
+According to the ARF and the corresponding PID rulebook, we will be supporting both mDoc and SD-JWT format. Alternative formats such as SD-JWT VC will be incorporated in a future release.
 </Details>
 
 <Details>
  <summary>What are the formats that we will be using for mDL, (Q)EAA?	</summary> 
-According to the ARF and the corresponding mDL rulebook, we will be supporting both mDoc and SD-JWT format.
+According to the ARF and the corresponding mDL rulebook, we will be supporting both mDoc and SD-JWT format. Alternative formats such as SD-JWT VC will be incorporated in a future release.
 </Details>
 
 <Details>
